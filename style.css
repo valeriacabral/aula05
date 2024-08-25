@@ -1,0 +1,144 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D6A8D6; /* Cor de fundo principal */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #711987; /* Cor de fundo do cabeçalho */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+header .logo img {
+    width: 60px; /* Ajuste conforme necessário */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilo da seção principal */
+.main-content {
+    padding: 40px;
+    background-color: #C59CC5; /* Cor de fundo da seção principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #711987;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #711987;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo da seção inferior */
+footer {
+    background-color: #711987; /* Cor de fundo do rodapé */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-logo img {
+    width: 100px; /* Ajuste conforme necessário */
+}
+
+footer .footer-text {
+    margin-top: 20px;
+}
+
+footer .footer-text p {
+    margin: 5px 0;
+}
+
+.credit {
+    font-size: 14px;
+    color: #711987;
+    margin-top: 20px;
+}
+
+/* Consultas de mídia para dispositivos menores */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .footer-text {
+        margin-left: 0;
+    }
+
+    .credit {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 14px;
+    }
+}
